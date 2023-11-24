@@ -1,0 +1,59 @@
+
+@font-face {
+	font-family: "MenoBannerRegular";
+	src: url('./menobanner/MenoBannerRegular.woff2') format('woff2'), url('./menobanner/MenoBannerRegular.woff') format('woff');
+}
+
+@font-face {
+	font-family: "MenoBannerRegularUppercase";
+	src: url('./menobanner/MenoBannerRegular.woff2') format('woff2'), url('./menobanner/MenoBannerRegular.woff') format('woff');
+	descent-override: 0%;
+}
+
+@font-face {
+	font-family: "MenoBannerBold";
+	src: url('./menobanner/MenoBannerBold.woff2') format('woff2'), url('./menobanner/MenoBannerBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: "MenoBannerBoldUppercase";
+	src: url('./menobanner/MenoBannerBold.woff2') format('woff2'), url('./menobanner/MenoBannerBold.woff') format('woff');
+	descent-override: 0%;
+}
+
+
+@font-face {
+	font-family: 'semplicitaproregular';
+	src: url('./semplicitapro/semplicitapro-webfont.woff2') format('woff2'),
+		url('./semplicitapro/semplicitapro-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'semplicitapromedium';
+	src: url('./semplicitapro/semplicitapro-medium-webfont.woff2') format('woff2'),
+		url('./semplicitapro/semplicitapro-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'semplicitaprosemibold';
+	src: url('./semplicitapro/semplicitapro-semibold-webfont.woff2') format('woff2'),
+		url('./semplicitapro/semplicitapro-semibold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'semplicitaprobold';
+	src: url('./semplicitapro/semplicitapro-bold-webfont.woff2') format('woff2'),
+		url('./semplicitapro/semplicitapro-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}

@@ -20,13 +20,60 @@
     align-items: center;
   }
 
+  &__primary {
+    svg {
+      margin-right: 8px;
+    }
+  }
+
+  &__secondary {
+    svg {
+      margin-left: 8px;
+    }
+  }
+
+  &__primary,
+  &__secondary {
+
+    .nav {
+      display: flex;
+      align-items: center;
+
+      span {
+        @include media-down(xs) {
+          display: none;
+        }
+      }
+    }
+
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   &__logo {
     position: absolute;
     z-index: 1;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0%);
+
+    img {
+      @include media-down(xs) {
+        width: 141px;
+        height: 158px;
+      }
+    }
+
+
+
+    &__secondary svg {
+      margin-left: 10px;
+    }
   }
+
 
   a {
     display: flex;

@@ -85,7 +85,18 @@
   },
   "typography": {
     "default": {
-      "fontFamily": "Semplicita Pro, Arial, sans-serif",
+      "fontFamily": "semplicitapromedium, Arial, sans-serif",
+      "fontSize": {
+        "xs": "14px",
+        "sm": "15px",
+        "md": "15px",
+        "lg": "16px",
+        "xl": "16px"
+      },
+      "lineHeight": 1.5
+    },
+    "serif": {
+      "fontFamily": "MenoBannerRegularUppercase, serif",
       "fontSize": {
         "xs": "14px",
         "sm": "15px",
@@ -104,7 +115,7 @@
       "lineHeight": 1.15
     },
     "display30": {
-      "fontSize": "Min(4.5rem, 11.5vw)",
+      "fontSize": "Min(96px, 48px)",
       "lineHeight": 1.25
     },
     "display40": {
@@ -177,6 +188,15 @@
     }
   },
   "color": {
+    "brand": {
+      "red": "#BD2E2D",
+      "brown": "#8F3225",
+      "yellow": "#DDDC00",
+      "lightblue": "#0C9FDB",
+      "blue": "#335CA7",
+      "black": "#333333",
+      "white": "#ffffff"
+    },
     "neutral": {
       "100": "#ffffff",
       "200": "#d7d6d6",
