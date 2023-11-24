@@ -85,7 +85,7 @@
   },
   "typography": {
     "default": {
-      "fontFamily": "Semplicita Pro, -apple-system, 'Helvetica Neue', 'Segoe UI', Roboto, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+      "fontFamily": "Semplicita Pro, Arial, sans-serif",
       "fontSize": {
         "xs": "14px",
         "sm": "15px",
