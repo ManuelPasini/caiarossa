@@ -4,7 +4,7 @@
   justify-content: center;
   min-height: min(70vh, 600px);
   min-height: min(--webkit-fill-available, 600px);
-  @extend .radial;
+
 
   .container {
     display: flex;

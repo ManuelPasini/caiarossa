@@ -85,7 +85,7 @@
   },
   "typography": {
     "default": {
-      "fontFamily": "Inter, -apple-system, 'Helvetica Neue', 'Segoe UI', Roboto, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+      "fontFamily": "Semplicita Pro, -apple-system, 'Helvetica Neue', 'Segoe UI', Roboto, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
       "fontSize": {
         "xs": "14px",
         "sm": "15px",
@@ -178,7 +178,7 @@
   },
   "color": {
     "neutral": {
-      "100": "#fafafa",
+      "100": "#ffffff",
       "200": "#d7d6d6",
       "300": "#b6b4b4",
       "400": "#8d8b8b",
