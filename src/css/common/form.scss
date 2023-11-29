@@ -1,0 +1,137 @@
+// Variables
+$checkbox-size: 20px;
+$checkbox-border: #cecece;
+$checkbox-selected: #02BB72; // Primary colour
+
+.form {
+  position: relative;
+
+  input[type=text] {
+    display: flex;
+    padding: 19px 24px;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 100px;
+    border: 1px solid var(--color-brand-black);
+    background: var(--color-brand-white);
+    width: 100%;
+
+    @include media-down(xs) {
+      padding: 16px 24px;
+    }
+
+    &::placeholder {
+      color: var(--ui-black);
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+
+    &:hover {
+      color: var(--color-brand-white);
+    }
+  }
+
+
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+
+  // Text
+  &+label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding-left: $checkbox-size + 10;
+
+
+    // Checkbox
+    &:before {
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      content: "";
+      background: transparent;
+      width: $checkbox-size;
+      height: $checkbox-size;
+      border: 1px solid #333;
+      border-radius: 3px;
+      transition: 200ms ease-in-out all;
+    }
+
+    // Tick
+    &:after {
+      position: absolute;
+      display: block;
+      top: 5px;
+      left: 8px;
+      content: "";
+      width: 5px;
+      height: 9px;
+      border-right: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      transform: rotate(45deg);
+      transition: 200ms ease-in-out all;
+    }
+  }
+
+  // Hover
+  &+label:hover {
+    color: #333;
+  }
+
+  // Focus
+  &+label:focus {
+    outline: none;
+  }
+
+  // Checked
+  &:checked {
+    &+label {
+      &:before {
+        background: transparent;
+        box-shadow: none;
+      }
+
+      &:after {
+        border-color: #333;
+      }
+    }
+  }
+
+  // Disabled
+  &:disabled {
+    &+label {
+      &:before {
+        background: #f2f2f2; // Disabled colour
+        box-shadow: none;
+      }
+
+      &:after {
+        border-color: transparent;
+      }
+    }
+  }
+
+  // Disabled Checked
+  &:checked:disabled {
+    &+label {
+      &:before {
+        background: #f2f2f2;
+        box-shadow: none;
+      }
+
+      &:after {
+        border-color: #cecece;
+      }
+    }
+  }
+}

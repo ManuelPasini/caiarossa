@@ -5,3 +5,44 @@ body {
   font-weight: var(--typography-font-weight, normal);
   line-height: var(--typography-line-height, 1.5);
 }
+
+.text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+
+  @include media-down(xs) {
+    row-gap: 32px;
+  }
+
+  .abstract {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+
+
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.red {
+  color: var(--color-brand-red);
+}
+
+.block {
+  display: block;
+  text-wrap: nowrap;
+}
+
+.v-center {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}

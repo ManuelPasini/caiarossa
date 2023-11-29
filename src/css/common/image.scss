@@ -1,0 +1,163 @@
+//animations
+$expo: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+$smooth: cubic-bezier(0, 0.97, 0.43, 1);
+
+.img {
+	position: relative;
+	width: 100%;
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		max-width: none;
+		max-height: none;
+		object-fit: cover;
+		object-position: 50% 50%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&-zoom {
+		overflow: hidden;
+		display: inline-block;
+
+		img {
+			transition: all 1.8s $smooth;
+		}
+
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	picture {
+		position: relative;
+		display: block;
+	}
+
+	&._1-1 {
+		picture {
+			padding-bottom: 100%;
+		}
+	}
+
+	&._3-2 {
+		picture {
+			padding-bottom: 66.66%;
+		}
+	}
+
+	&._16-9 {
+		picture {
+			padding-bottom: 56.25%;
+		}
+	}
+
+	&._wide {
+		picture {
+			padding-bottom: 45%;
+		}
+	}
+
+	&._widest {
+		picture {
+			padding-bottom: 30%;
+		}
+	}
+
+	&._h100 {
+		height: 100%;
+
+		picture {
+			height: 100%;
+		}
+	}
+
+	&._w290 {
+		width: 290px;
+
+
+		picture {
+			width: 290px;
+		}
+
+		@include media-down(xs) {
+			width: 100%;
+		}
+
+	}
+
+	&._slim {
+
+		picture {
+			padding-bottom: 12%;
+
+			@include media-down(sm) {
+				padding-bottom: 30%;
+			}
+
+			img {
+				object-position: top;
+			}
+		}
+	}
+
+	&._4-5 {
+		picture {
+			padding-bottom: 125%;
+		}
+	}
+
+	&._4-3 {
+		picture {
+			padding-bottom: 140%;
+		}
+	}
+
+	&._5-4 {
+		picture {
+			padding-bottom: 80%;
+		}
+	}
+}
+
+.img--default {
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.img--ico {
+	width: auto;
+	height: auto;
+	max-height: 48px;
+}
+
+.img--double {
+
+	.img--primary {
+		position: relative;
+		z-index: 0;
+	}
+
+	.img--secondary {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: all .3s $smooth;
+	}
+
+	&:hover {
+		.img--secondary {
+			opacity: 1;
+		}
+	}
+}

@@ -1,6 +1,36 @@
 .footer {
+
   .icon--websolute {
     width: 85px;
     height: 16px;
+  }
+
+  .pl-96 {
+    @include media-down(xs) {
+      padding-left: 16px;
+    }
+  }
+
+  .pr-96 {
+    @include media-down(xs) {
+      padding-left: 16px;
+    }
+  }
+
+  .px-96 {
+    @include media-down(xs) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  ul {
+    li {
+      margin-bottom: 40px;
+
+      @include media-down(xs) {
+        margin-bottom: 16px;
+      }
+    }
   }
 }

@@ -1,0 +1,31 @@
+.editorial {
+
+    @include media-down(sm) {
+        text-align: center;
+    }
+
+    .cp-48 {
+        padding-left: 48px;
+        padding-right: 48px;
+
+        @include media-down(sm) {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 48px;
+            text-align: center;
+        }
+    }
+
+    ._4-3 {
+        @include media-down(sm) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
+    ._1-1 {
+        @include media-down(sm) {
+            padding-bottom: 48px;
+        }
+    }
+}

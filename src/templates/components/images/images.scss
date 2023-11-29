@@ -1,0 +1,34 @@
+.custom-grid-6 {
+  .item:nth-child(2) {
+    margin-top: 80px;
+
+    @include media-down(sm) {
+      margin-top: 0;
+    }
+  }
+
+  @include media-down(sm) {
+    .item:nth-child(1) {
+      picture {
+        padding-bottom: 80%;
+      }
+    }
+
+    .item:nth-child(3) {
+      picture {
+        padding-bottom: 80%;
+      }
+    }
+  }
+}
+
+.extra-padding {
+  img {
+    padding: 16px;
+
+    @include media-down(sm) {
+      padding: 0;
+    }
+  }
+
+}

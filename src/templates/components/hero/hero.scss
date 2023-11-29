@@ -20,24 +20,4 @@
       text-align: center;
     }
   }
-
-  .display30 {
-    font-weight: normal;
-    line-height: 110%;
-    color: var(--color-brand-red);
-    text-transform: uppercase;
-    font-family: var(--typography-serif-font-family);
-    font-size: 96px;
-
-    @include media-down(xs) {
-      line-height: 50.4px;
-      font-size: 56px;
-    }
-
-    span {
-      display: block;
-      text-wrap: nowrap;
-    }
-
-  }
 }

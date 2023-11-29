@@ -61,4 +61,7 @@
   "css.validate": false,
   "css.lint.emptyRules": "ignore",
   "css.lint.unknownProperties": "ignore",
+  "[twig]": {
+    "editor.defaultFormatter": "mblode.twig-language-2"
+  },
 }

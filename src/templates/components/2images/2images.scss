@@ -1,0 +1,9 @@
+.custom-grid-4 {
+  .item:nth-child(2) {
+    margin-top: 80px;
+
+    @include media-down(sm) {
+      margin-top: 48px;
+    }
+  }
+}

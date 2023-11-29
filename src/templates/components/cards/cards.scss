@@ -1,0 +1,40 @@
+.cards {
+  .item {
+    background-color: var(--color-ui-grey03);
+    text-align: center;
+    transition: all 1.8s $smooth;
+
+    @include media-down(sm) {
+      margin-bottom: 20px;
+    }
+
+    .text {
+      @include media-down(sm) {
+        row-gap: 6px;
+      }
+
+      .abstract {
+        @include media-down(xs) {
+          font-family: var(--typography-paragraph10-font-family);
+          font-size: 14px;
+        }
+      }
+    }
+
+    .ico svg {
+      @include media-down(sm) {
+        width: 76px;
+        height: 76px;
+      }
+    }
+
+    &:hover {
+      background-color: var(--color-ui-gold);
+
+      .title,
+      .abstract {
+        color: var(--color-brand-white);
+      }
+    }
+  }
+}

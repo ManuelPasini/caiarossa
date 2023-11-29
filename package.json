@@ -13,7 +13,7 @@
     "@studio-freight/lenis": "^1.0.27"
   },
   "devDependencies": {
-    "@websolutespa/ws-vite": "latest",
+    "@websolutespa/ws-vite": "0.0.7",
     "eslint-config-websolute": "*",
     "eslint": "^8.46.0"
   }
