@@ -175,6 +175,11 @@
     "paragraph50": {
       "fontSize": "0.7rem",
       "lineHeight": 2.25
+    },
+    "label10": {
+      "fontFamily": "semplicitaprosemibold, Arial, sans-serif",
+      "fontSize": "12px",
+      "lineHeight": "150%"
     }
   },
   "grid": {

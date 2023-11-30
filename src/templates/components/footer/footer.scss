@@ -24,13 +24,32 @@
     }
   }
 
-  ul {
-    li {
-      margin-bottom: 40px;
+  .follow {
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      column-gap: 24px;
+      align-items: center;
 
-      @include media-down(xs) {
-        margin-bottom: 16px;
+      li {}
+    }
+  }
+
+  .sitemap {
+
+    @include media-down(xs) {
+      margin-bottom: 32px;
+    }
+
+    ul {
+      li {
+        margin-bottom: 40px;
+
+        @include media-down(xs) {
+          margin-bottom: 16px;
+        }
       }
     }
   }
+
 }

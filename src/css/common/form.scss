@@ -1,5 +1,5 @@
 // Variables
-$checkbox-size: 20px;
+$checkbox-size: 14px;
 $checkbox-border: #cecece;
 $checkbox-selected: #02BB72; // Primary colour
 
@@ -57,7 +57,8 @@ $checkbox-selected: #02BB72; // Primary colour
       position: absolute;
       display: block;
       left: 0;
-      top: 0;
+      top: 50%;
+      margin-top: - ($checkbox-size/2);
       content: "";
       background: transparent;
       width: $checkbox-size;
@@ -71,13 +72,13 @@ $checkbox-selected: #02BB72; // Primary colour
     &:after {
       position: absolute;
       display: block;
-      top: 5px;
-      left: 8px;
+      top: 6px;
+      left: 5px;
       content: "";
-      width: 5px;
-      height: 9px;
-      border-right: 2px solid transparent;
-      border-bottom: 2px solid transparent;
+      width: 4px;
+      height: 7px;
+      border-right: 1px solid transparent;
+      border-bottom: 1px solid transparent;
       transform: rotate(45deg);
       transition: 200ms ease-in-out all;
     }
