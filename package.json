@@ -10,11 +10,12 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.27"
+    "@studio-freight/lenis": "^1.0.27",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@websolutespa/ws-vite": "0.0.7",
-    "eslint-config-websolute": "*",
-    "eslint": "^8.46.0"
+    "eslint": "^8.46.0",
+    "eslint-config-websolute": "*"
   }
 }

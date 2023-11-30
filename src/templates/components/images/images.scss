@@ -1,4 +1,11 @@
 .custom-grid-6 {
+
+  @include media-down(sm) {
+    grid-template-columns: [col1-start] auto [col2-start] auto [col3-start] auto [col4-end];
+    grid-template-rows: [row1-start] auto [row2-start];
+    align-items: center;
+  }
+
   .item:nth-child(2) {
     margin-top: 80px;
 
@@ -9,12 +16,26 @@
 
   @include media-down(sm) {
     .item:nth-child(1) {
+      grid-column: col1-start / col3-start;
+      grid-row: row1-start;
+      margin-bottom: var(--grid-column-gap);
+
       picture {
         padding-bottom: 80%;
       }
     }
 
+    .item:nth-child(2) {
+      grid-column: col3-start / col4-start;
+      grid-row: row1-start / row2-end;
+
+      picture {}
+    }
+
     .item:nth-child(3) {
+      grid-column: col1-start / col3-start;
+      grid-row: row2-start;
+
       picture {
         padding-bottom: 80%;
       }

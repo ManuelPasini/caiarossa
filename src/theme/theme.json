@@ -16,11 +16,11 @@
       24,
       32,
       [
-        32,
+        16,
         40
       ],
       [
-        40,
+        32,
         48
       ],
       [
@@ -180,6 +180,11 @@
       "fontFamily": "semplicitaprosemibold, Arial, sans-serif",
       "fontSize": "12px",
       "lineHeight": "150%"
+    },
+    "label30": {
+      "fontFamily": "semplicitaprosemibold, Arial, sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "120%"
     }
   },
   "grid": {
@@ -201,13 +206,19 @@
       "maxWidth": {
         "xs": "calc(100% - var(--grid-column-gap) * 2)",
         "sm": "calc(100% - var(--grid-column-gap) * 2)",
-        "md": "calc(1024px - var(--grid-column-gap) * 2)",
-        "lg": "calc(1440px - var(--grid-column-gap) * 2)",
-        "xl": "calc(1600px - var(--grid-column-gap) * 2)"
+        "md": "calc(1024px - var(--grid-column-gap) * 4)",
+        "lg": "calc(1440px - var(--grid-column-gap) * 4)",
+        "xl": "calc(1600px - var(--grid-column-gap) * 4)"
       }
     },
     "fluid": {
-      "maxWidth": "calc(100% - var(--grid-column-gap) * 2)"
+      "maxWidth": {
+        "xs": "calc(100% - var(--grid-column-gap) * 2)",
+        "sm": "calc(100% - var(--grid-column-gap) * 2)",
+        "md": "calc(100% - var(--grid-column-gap) * 4)",
+        "lg": "calc(100% - var(--grid-column-gap) * 4)",
+        "xl": "calc(100% - var(--grid-column-gap) * 4)"
+      }
     }
   },
   "color": {
@@ -221,6 +232,7 @@
       "white": "#ffffff"
     },
     "ui": {
+      "grey02": "#E8E8E8",
       "grey03": "#F5F5F5",
       "gold": "#B59044"
     },

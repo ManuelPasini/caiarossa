@@ -36,20 +36,22 @@
   }
 
   .sitemap {
-
     @include media-down(xs) {
       margin-bottom: 32px;
     }
 
     ul {
-      li {
-        margin-bottom: 40px;
-
-        @include media-down(xs) {
-          margin-bottom: 16px;
-        }
-      }
+      display: flex;
+      flex-direction: column;
+      gap: var(--m-40);
     }
   }
+}
 
+.credits {
+  padding-top: max(24px, min(40px, 24px + (100vw - 768px) / 1152 * (40 - 24)));
+  padding-bottom: max(24px, min(40px, 24px + (100vw - 768px) / 1152 * (40 - 24)));
+  padding-left: max(16px, min(40px, 16px + (100vw - 768px) / 1152 * (40 - 16)));
+  padding-right: max(16px, min(40px, 16px + (100vw - 768px) / 1152 * (40 - 16)));
+  border-top: 1px solid var(--color-ui-grey02);
 }

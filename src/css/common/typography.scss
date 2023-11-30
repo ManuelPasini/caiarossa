@@ -9,11 +9,9 @@ body {
 .text {
   display: flex;
   flex-direction: column;
-  row-gap: 48px;
+  row-gap: var(--m-48);
 
-  @include media-down(xs) {
-    row-gap: 32px;
-  }
+  @include media-down(xs) {}
 
   .abstract {
     display: flex;

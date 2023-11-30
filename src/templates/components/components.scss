@@ -1,9 +1,7 @@
 .components {
     display: flex;
     flex-direction: column;
-    row-gap: 96px;
+    row-gap: max(48px, min(96px, 48px + (100vw - 768px) / 1152 * (96 - 48)));
 
-    @include media-down(xs) {
-        row-gap: 48px;
-    }
+    @include media-down(xs) {}
 }

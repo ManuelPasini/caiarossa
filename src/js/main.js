@@ -21,6 +21,15 @@ if (import.meta.env.DEV) {
   console.log('theme', theme);
 }
 
+import 'swiper/bundle';
+import 'swiper/css/bundle';
+
+
 function threeshake() {
   console.log('❗if this comment is present in the main.min.js there is a threeshake error!');
 }
+
+window.onload = () => {
+
+};
+

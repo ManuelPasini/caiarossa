@@ -9,8 +9,10 @@
     }
 
     .text {
+      gap: 64px;
+
       @include media-down(sm) {
-        row-gap: 6px;
+        gap: 32px;
       }
 
       .abstract {
