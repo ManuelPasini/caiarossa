@@ -112,30 +112,31 @@
       "lineHeight": "100%"
     },
     "display10": {
-      "fontFamily": "MenoBannerRegularUppercase, serif",
+      "fontFamily": "MenoBannerRegular, serif",
       "fontSize": [ 56, 160 ],
       "lineHeight": "90%",
       "letterSpacing": "-4px"
     },
     "display20": {
-      "fontFamily": "MenoBannerRegularUppercase, serif",
+      "fontFamily": "MenoBannerRegular, serif",
       "fontSize": [ 48, 128 ],
       "lineHeight": "100%",
       "letterSpacing": "-4px"
     },
     "display30": {
-      "fontFamily": "MenoBannerRegularUppercase, serif",
+      "fontFamily": "MenoBannerRegular, serif",
       "fontSize": [ 48, 96 ],
       "lineHeight": "110%"
     },
-    "display40": {
-      "fontSize": "Min(2.75rem, 7vw)",
-      "lineHeight": 1.35
+    "display60": {
+      "fontFamily": "MenoBannerRegular, serif",
+      "fontSize": [ 24, 40 ],
+      "lineHeight": "120%"
     },
     "display90": {
       "fontFamily": "MenoBannerRegularUppercase, serif",
       "fontSize": [ 24, 32 ],
-      "lineHeight": "120%"
+      "lineHeight": "110%"
     },
     "heading10": {
       "fontSize": "Min(2.5rem, 6.4vw)",
@@ -225,13 +226,14 @@
     "brand": {
       "red": "#BD2E2D",
       "brown": "#8F3225",
-      "yellow": "#DDDC00",
+      "yellow": "#FFD23F",
       "lightblue": "#0C9FDB",
       "blue": "#335CA7",
       "black": "#333333",
       "white": "#ffffff"
     },
     "ui": {
+      "grey": "#656E71",
       "grey02": "#E8E8E8",
       "grey03": "#F5F5F5",
       "gold": "#B59044"

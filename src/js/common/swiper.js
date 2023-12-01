@@ -12,7 +12,6 @@ export function swiper() {
     on: {
       slideChangeTransitionEnd: function () {
         console.log(this.realIndex);
-
       }
     }
   });
@@ -29,5 +28,26 @@ export function swiper() {
 
   homeSwiperText.controller.control = homeSwiper;
   homeSwiper.controller.control = homeSwiperText;
+
+  //wines
+  var swiper = new Swiper(".swiper-slider-wines", {
+    slidesPerView: 4,
+    spaceBetween: "8%",
+    centeredSlides: true,
+    centerInsufficientSlides: false,
+    preventClicks: true,
+    loop: true,
+    on: {
+      init: function () {
+
+      },
+      slideChangeTransitionStart: function () {
+
+      },
+      slideChangeTransitionEnd: function () {
+
+      }
+    },
+  });
 
 }
