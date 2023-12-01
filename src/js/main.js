@@ -3,12 +3,16 @@ import 'virtual:spritemap';
 import 'virtual:theme.css';
 import '../css/main.scss';
 //
+import 'swiper/bundle';
+import 'swiper/css/bundle';
 import { lazyLoad } from './common/lazyLoad';
 import { lenis } from './common/lenis';
+import { swiper } from './common/swiper';
 
 addEventListener('DOMContentLoaded', () => {
   lazyLoad();
   lenis();
+  swiper();
 });
 
 import icons from 'virtual:icons';
@@ -20,9 +24,6 @@ if (import.meta.env.DEV) {
   console.log('icons', icons);
   console.log('theme', theme);
 }
-
-import 'swiper/bundle';
-import 'swiper/css/bundle';
 
 
 function threeshake() {

@@ -18,7 +18,6 @@ body {
     flex-direction: column;
     row-gap: 28px;
 
-
   }
 }
 
@@ -32,6 +31,10 @@ body {
 
 .red {
   color: var(--color-brand-red);
+}
+
+.white {
+  color: var(--color-brand-white);
 }
 
 .block {
