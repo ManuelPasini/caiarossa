@@ -15,7 +15,11 @@
             display: block;
             text-align: center;
             position: relative;
-            margin: 0 15px;
+            margin: 0 45px;
+
+            @include media-down(xs) {
+                margin: 0 25px;
+            }
 
             img {
                 z-index: 2;

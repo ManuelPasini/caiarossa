@@ -31,8 +31,19 @@ export function swiper() {
 
   //wines
   var swiper = new Swiper(".swiper-slider-wines", {
-    slidesPerView: 4,
+    slidesPerView: 2,
     spaceBetween: "8%",
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
+    },
+
     centeredSlides: true,
     centerInsufficientSlides: false,
     preventClicks: true,
