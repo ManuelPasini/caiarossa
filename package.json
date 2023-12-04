@@ -14,7 +14,7 @@
     "swiper": "^11.0.5"
   },
   "devDependencies": {
-    "@websolutespa/ws-vite": "0.0.7",
+    "@websolutespa/ws-vite": "0.0.8",
     "eslint": "^8.46.0",
     "eslint-config-websolute": "*"
   }

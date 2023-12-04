@@ -11,7 +11,7 @@ export function swiper() {
     effect: "fade",
     on: {
       slideChangeTransitionEnd: function () {
-        console.log(this.realIndex);
+        //console.log(this.realIndex);
       }
     }
   });

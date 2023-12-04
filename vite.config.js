@@ -3,6 +3,7 @@ import main from './src/theme/main.json';
 import theme from './src/theme/theme.json';
 
 export default wsVite({
+  base: '/caiarossa-temp/',
   paths: {
     src: './src',
     dist: './dist',

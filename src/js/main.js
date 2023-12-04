@@ -7,12 +7,14 @@ import 'swiper/bundle';
 import 'swiper/css/bundle';
 import { lazyLoad } from './common/lazyLoad';
 import { lenis } from './common/lenis';
+import { navigation } from './common/navigation';
 import { swiper } from './common/swiper';
 
 addEventListener('DOMContentLoaded', () => {
   lazyLoad();
-  lenis();
   swiper();
+  lenis();
+  navigation();
 });
 
 import icons from 'virtual:icons';

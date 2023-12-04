@@ -70,6 +70,44 @@
 
   }
 
+  &__secondary {
+
+    .nav {
+      svg {
+        &:last-child {
+          display: none;
+        }
+      }
+
+      &.active {
+        span {
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        svg {
+          display: none;
+
+          &:first-child {
+            display: none;
+          }
+
+          &:last-child {
+            display: inline-block;
+          }
+
+        }
+
+        &:hover {
+
+          svg {
+            transform: scale(1);
+          }
+        }
+
+      }
+    }
+  }
 
   &__logo {
     position: absolute;
@@ -79,6 +117,11 @@
     transform: translate(-50%, 0%);
 
     img {
+      @include media-down(lg) {
+        width: 171px;
+        height: 191px;
+      }
+
       @include media-down(xs) {
         width: 141px;
         height: 158px;
