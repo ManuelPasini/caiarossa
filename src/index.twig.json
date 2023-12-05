@@ -18,24 +18,13 @@
     ],
     "components": [
       {
-        "schema": "text-only",
-        "title": "Text Only Title",
-        "abstract": "<p>Text Only Abstract.</p>",
-        "nav": {
-          "id": 1,
-          "title": "ss",
-          "href": "asdsd",
-          "type": "page"
+        "schema": "image",
+        "media": {
+          "type": "image",
+          "src": "/assets/img/hero.jpg"
         }
-      },
-      {
-        "schema": "my-lazy",
-        "title": "Lazy Module",
-        "abstract": "<p>I'm a lazy module</p>"
-      },
-      {
-        "schema": "listing"
       }
+
     ],
     "breadcrumb": [
       {

@@ -16,9 +16,12 @@
 				<div class="abstract paragraph10">
 					{{ abstract2 }}
 				</div>
-				<div>
-					<button class="cta cta10">Book now yours</button>
-				</div>
+				{% if cta %}
+					<div>
+						<button class="cta cta10">
+							{{ cta }}</button>
+					</div>
+				{% endif %}
 			</div>
 		</div>
 	</div>

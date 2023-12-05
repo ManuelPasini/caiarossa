@@ -128,9 +128,14 @@
       "fontSize": [ 48, 96 ],
       "lineHeight": "110%"
     },
+    "display40": {
+      "fontFamily": "MenoBannerRegular, serif",
+      "fontSize": [ 40, 64 ],
+      "lineHeight": "120%"
+    },
     "display50": {
       "fontFamily": "MenoBannerRegular, serif",
-      "fontSize": [ 32, 64 ],
+      "fontSize": [ 32, 56 ],
       "lineHeight": "130%"
     },
     "display60": {

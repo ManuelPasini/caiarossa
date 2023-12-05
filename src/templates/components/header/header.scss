@@ -1,27 +1,23 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   z-index: 999;
   max-width: 1920px;
   margin: 0 auto;
-  height: 60px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   transition: all .3s cubic-bezier(0, .97, .43, 1);
 
-  &__wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+  &__wrapper {}
 
   &__primary,
   &__secondary {
+
+    padding-top: 40px;
+
+    @include media-down(xs) {
+      padding-top: 24px;
+    }
 
     .nav {
       position: relative;
@@ -47,7 +43,9 @@
 
       span {
         @include media-down(xs) {
-          display: none;
+          text-indent: -666px;
+          display: inline-block;
+          overflow: hidden;
         }
       }
 
@@ -71,6 +69,15 @@
   }
 
   &__secondary {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__secondary {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
 
     .nav {
       svg {
@@ -81,8 +88,9 @@
 
       &.active {
         span {
-          opacity: 0;
-          pointer-events: none;
+          text-indent: -666px;
+          display: inline-block;
+          overflow: hidden;
         }
 
         svg {
@@ -110,22 +118,14 @@
   }
 
   &__logo {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    text-align: center;
 
     img {
-      @include media-down(lg) {
-        width: 171px;
-        height: 191px;
-      }
+      max-width: 100%;
 
-      @include media-down(xs) {
-        width: 141px;
-        height: 158px;
-      }
+      @include media-down(lg) {}
+
+      @include media-down(xs) {}
     }
   }
 

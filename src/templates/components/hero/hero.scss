@@ -1,11 +1,98 @@
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 240px;
+  position: relative;
 
-  @include media-down(xs) {
-    margin-top: 180px;
+  &.full-height {
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    +.components {
+      margin-top: 100vh;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      color: var(--color-brand-red);
+    }
+
+    .cont-animated {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: 1;
+
+      @include media-down(xs) {
+        display: none;
+      }
+
+      svg {
+        height: auto;
+        width: 100%;
+
+      }
+
+      &-01 {
+        height: calc(100vh * 4);
+        animation: slide 18s linear 1s infinite;
+        // background: url("@image:/assets/icons/home-slider-01.svg") repeat-y;
+        // background-size: contain;
+
+        svg {}
+
+      }
+
+      &-02 {
+        height: calc(100vh * 4);
+        animation: slide 24s linear infinite;
+        // background: url("@image:/assets/icons/home-slider-01.svg") repeat-y;
+        // background-size: contain;
+
+        svg {}
+      }
+
+
+    }
+
+    .content {
+      z-index: 2;
+    }
+  }
+
+  .art-01,
+  .art-02 {
+    position: absolute;
+
+    @include media-down(sm) {
+      display: none;
+    }
+
+    svg {
+      height: auto;
+      width: 12vw;
+
+      @include media-down(md) {
+        width: 14vw;
+      }
+    }
+  }
+
+  .art-01 {
+    left: -60px;
+    bottom: -8%;
+  }
+
+  .art-02 {
+    right: -60px;
+    top: -20%;
   }
 
   .container {
@@ -19,5 +106,52 @@
       align-items: center;
       text-align: center;
     }
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -100vh;
+  }
+}
+
+.arr-down {
+  position: fixed;
+  bottom: 3%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  z-index: 3;
+  row-gap: 10px;
+  transition: all 1.2s $smooth;
+  opacity: 1;
+
+  &.is-hidden {
+    opacity: 0;
+  }
+
+
+  span {
+    display: inline-block;
+    font-size: 14px;
+
+  }
+
+  svg {
+    width: 100%;
+    opacity: 1;
+    animation: downdown 2s infinite;
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes downdown {
+  to {
+    opacity: 0;
+    transform: translateY(10px);
   }
 }

@@ -3,18 +3,18 @@ import 'virtual:spritemap';
 import 'virtual:theme.css';
 import '../css/main.scss';
 //
-import 'swiper/bundle';
-import 'swiper/css/bundle';
 import { lazyLoad } from './common/lazyLoad';
 import { lenis } from './common/lenis';
 import { navigation } from './common/navigation';
-import { swiper } from './common/swiper';
+import scrollDiscover from './common/scrollDiscover';
+import swiper from './common/swiper';
 
 addEventListener('DOMContentLoaded', () => {
   lazyLoad();
   swiper();
   lenis();
   navigation();
+  scrollDiscover()
 });
 
 import icons from 'virtual:icons';
