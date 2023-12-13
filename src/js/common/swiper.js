@@ -14,12 +14,8 @@ export default function swiper() {
     autoplay: {
       delay: 4000
     },
-    effect: "fade",
-    on: {
-      slideChangeTransitionEnd: function () {
-        //console.log(this.realIndex);
-      }
-    }
+    effect: "fade"
+
   });
 
   var homeSwiperText = new Swiper(".swiper-fullwith-text", {
@@ -29,6 +25,11 @@ export default function swiper() {
     loop: true,
     autoplay: {
       delay: 4000
+    },
+    on: {
+      slideChangeTransitionEnd: function () {
+        //console.log(this.realIndex);
+      }
     }
 
   });
@@ -56,17 +57,7 @@ export default function swiper() {
     centerInsufficientSlides: false,
     preventClicks: true,
     loop: true,
-    on: {
-      init: function () {
 
-      },
-      slideChangeTransitionStart: function () {
-
-      },
-      slideChangeTransitionEnd: function () {
-
-      }
-    },
   });
 
 }

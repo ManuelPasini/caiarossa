@@ -1,0 +1,22 @@
+{% if media == 'image' %}
+	<section class="image media">
+		<div class="container-fluid">
+			<div class="img _16-9 img--primary img-zoom">
+				<picture>
+					{{image({ src: thissrc, srcset: [769, 1920], alt: 'default' })}}
+				</picture>
+			</div>
+		</div>
+	</section>
+{% else %}
+	<section class="image media">
+		<div class="container-fluid">
+			<div class="img _16-9 img--primary img-zoom">
+				<video width="320" height="240" controls>
+					<source src="{{ thissrc }}" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</div>
+	</section>
+{% endif %}
