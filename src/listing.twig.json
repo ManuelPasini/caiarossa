@@ -1,0 +1,135 @@
+{
+  "$schema": "../node_modules/@websolutespa/ws-vite/schema/page.schema.json",
+  "page": {
+    "id": 6,
+    "title": "ws-vite twig",
+    "abstract": "a boilerplate built with 🖤 by Websolute",
+    "meta": {
+      "title": "Ws Vite - Home"
+    },
+    "href": "/index",
+    "alternates": [
+      {
+        "id": "/it/index",
+        "title": "Home",
+        "locale": "it",
+        "market": "ww"
+      }
+    ],
+    "components": [
+      { "schema": "media",
+        "media": {
+          "type": "image",
+          "src": "/assets/img/hero.jpg"
+        }
+      },
+      { "schema": "cards",
+        "items": [
+          {
+            "icon": "/assets/icons/ico_01.svg",
+            "number": "39",
+            "abstract": "Hectares of vines (96 acres)"
+          },
+          {
+            "icon": "/assets/icons/ico_02.svg",
+            "number": "39",
+            "abstract": "Hectares of vines (96 acres)"
+          },
+          {
+            "icon": "/assets/icons/ico_03.svg",
+            "number": "39",
+            "abstract": "Hectares of vines (96 acres)"
+          },
+          {
+            "icon": "/assets/icons/ico_04.svg",
+            "number": "39",
+            "abstract": "Hectares of vines (96 acres)"
+          }
+        ]
+      },
+      { "schema": "media",
+        "media": {
+          "type": "image",
+          "src": "/assets/img/hero.jpg"
+        }
+      },
+      {
+        "schema": "listavini",
+        "items": [
+          {
+            "src": "/assets/img/bottiglia_01.png",
+            "color": "blue",
+            "abstract": "Hectares of vines (96 acres)"
+          },
+          {
+            "src": "/assets/img/bottiglia_02.png",
+            "color": "red",
+            "abstract": "Hectares of forest (84 acres)"
+          },
+          {
+            "src": "/assets/img/bottiglia_03.png",
+            "color": "yellow",
+            "abstract": "Hectares of wildflower meadows (76 acres)"
+          },
+          {
+            "src": "/assets/img/bottiglia_01.png",
+            "color": "blue",
+            "abstract": "Hectares of olive groves (15 acres)"
+          },
+          {
+            "src": "/assets/img/bottiglia_01.png",
+            "color": "blue",
+            "abstract": "Hectares of vines (96 acres)"
+          },
+          {
+            "src": "/assets/img/bottiglia_02.png",
+            "color": "red",
+            "abstract": "Hectares of forest (84 acres)"
+          },
+          {
+            "src": "/assets/img/bottiglia_03.png",
+            "color": "yellow",
+            "abstract": "Hectares of wildflower meadows (76 acres)"
+          },
+          {
+            "src": "/assets/img/bottiglia_02.png",
+            "color": "red",
+            "abstract": "Hectares of olive groves (15 acres)"
+          },
+          {
+            "src": "/assets/img/bottiglia_01.png",
+            "color": "blue",
+            "abstract": "Hectares of forest (84 acres)"
+          },
+          {
+            "src": "/assets/img/bottiglia_02.png",
+            "color": "red",
+            "abstract": "Hectares of wildflower meadows (76 acres)"
+          },
+          {
+            "src": "/assets/img/bottiglia_03.png",
+            "color": "yellow",
+            "abstract": "Hectares of olive groves (15 acres)"
+          },
+          {
+            "src": "/assets/img/bottiglia_03.png",
+            "color": "yellow",
+            "abstract": "Hectares of vines (96 acres)"
+          },
+          {
+            "src": "/assets/img/bottiglia_01.png",
+            "color": "blue",
+            "abstract": "Hectares of forest (84 acres)"
+          }
+        ]
+      }
+    ],
+
+    "breadcrumb": [
+      {
+        "href": "/index",
+        "title": "Home"
+      }
+    ]
+  }
+}

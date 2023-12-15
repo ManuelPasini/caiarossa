@@ -1,5 +1,5 @@
 {
-  "$schema": "../../node_modules/@websolutespa/ws-vite/schema/page.schema.json",
+  "$schema": "../node_modules/@websolutespa/ws-vite/schema/page.schema.json",
   "page": {
     "id": 6,
     "title": "ws-vite twig",
@@ -39,22 +39,108 @@
         }
       }
     ],
-    "newmedia": [
+    "cards": [
       {
-        "schema": "media",
-        "media": {
-          "type": "image",
-          "src": "/assets/img/hero.jpg"
-        }
+        "schema": "cards",
+        "icon": "ico_01",
+        "number": "39",
+        "abstract": "Hectares of vines (96 acres)"
       },
       {
-        "schema": "media",
-        "media": {
-          "type": "video",
-          "src": "/assets/video/movie.mp4"
-        }
+        "schema": "cards",
+        "icon": "ico_02",
+        "number": "31",
+        "abstract": "Hectares of forest (84 acres)"
+      },
+      {
+        "schema": "cards",
+        "icon": "ico_03",
+        "number": "9",
+        "abstract": "Hectares of wildflower meadows (76 acres)"
+      },
+      {
+        "schema": "cards",
+        "icon": "ico_04",
+        "number": "1",
+        "abstract": "Hectares of olive groves (15 acres)"
       }
-
+    ],
+    "vini": [
+      {
+        "icon": "ico_01",
+        "number": "39",
+        "abstract": "Hectares of vines (96 acres)"
+      },
+      {
+        "icon": "ico_02",
+        "number": "31",
+        "abstract": "Hectares of forest (84 acres)"
+      },
+      {
+        "icon": "ico_03",
+        "number": "9",
+        "abstract": "Hectares of wildflower meadows (76 acres)"
+      },
+      {
+        "icon": "ico_04",
+        "number": "1",
+        "abstract": "Hectares of olive groves (15 acres)"
+      },
+      {
+        "icon": "ico_05",
+        "number": "39",
+        "abstract": "Hectares of vines (96 acres)"
+      },
+      {
+        "icon": "ico_06",
+        "number": "31",
+        "abstract": "Hectares of forest (84 acres)"
+      },
+      {
+        "icon": "ico_07",
+        "number": "9",
+        "abstract": "Hectares of wildflower meadows (76 acres)"
+      },
+      {
+        "icon": "ico_08",
+        "number": "1",
+        "abstract": "Hectares of olive groves (15 acres)"
+      },
+      {
+        "icon": "ico_09",
+        "number": "31",
+        "abstract": "Hectares of forest (84 acres)"
+      },
+      {
+        "icon": "ico_10",
+        "number": "9",
+        "abstract": "Hectares of wildflower meadows (76 acres)"
+      },
+      {
+        "icon": "ico_11",
+        "number": "1",
+        "abstract": "Hectares of olive groves (15 acres)"
+      },
+      {
+        "icon": "ico_12",
+        "number": "39",
+        "abstract": "Hectares of vines (96 acres)"
+      },
+      {
+        "icon": "ico_13",
+        "number": "31",
+        "abstract": "Hectares of forest (84 acres)"
+      },
+      {
+        "icon": "ico_14",
+        "number": "9",
+        "abstract": "Hectares of wildflower meadows (76 acres)"
+      },
+      {
+        "icon": "ico_08",
+        "number": "1",
+        "abstract": "Hectares of olive groves (15 acres)"
+      }
     ],
     "breadcrumb": [
       {

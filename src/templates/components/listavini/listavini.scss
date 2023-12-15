@@ -1,0 +1,33 @@
+.listavini {
+
+  .grid {
+    column-gap: var(--grid-column-gap, 0) !important;
+    row-gap: var(--grid-column-gap, 0) !important;
+
+    .item {
+      margin-top: 0px !important;
+      background-color: var(--color-ui-grey03);
+
+      picture {
+        transition: all 2s $smooth;
+        margin-bottom: var(--grid-column-gap);
+      }
+
+      .info {
+        opacity: 1 !important;
+        transform: translateY(0px) !important;
+      }
+
+      &-background {
+        background-size: cover;
+      }
+
+      &:hover {
+        picture {
+          transform: scale(1.07);
+        }
+      }
+    }
+  }
+
+}

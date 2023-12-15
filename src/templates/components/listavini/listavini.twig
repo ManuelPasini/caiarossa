@@ -1,0 +1,39 @@
+<section class="listavini slider-wines">
+	<div class="container-fluid grid">
+		{% if item %}
+			{% set customCounter = 1 %}
+			{% set counterBanner = 1 %}
+			{% set n = 4 %}
+			{% for item in item.items %}
+				{% set remainder = customCounter % 5 %}
+
+				{% set classes = (remainder == 1 or remainder == 2) ? 'grid-md-6' : (remainder == 3 or remainder == 4 or remainder == 5 or remainder == 0) ? 'grid-md-4' : '' %}
+				<div class="grid-2 item item-{{ customCounter }} {{ classes }} px-40 pt-64 pb-80">
+					<picture>
+						<div class="ico {{item.color}}">
+							{{icon('bg-bottle1')}}
+						</div>
+						<div class="ico {{item.color}}">
+							{{icon('bg-bottle2')}}
+						</div>
+						{{image({ src:  item.src , srcset: [769, 1920], alt: 'default' })}}
+					</picture>
+					<div class="info center">
+						<div class="display60 black uppercase">
+							Caiarossa bianco
+						</div>
+						<div class="paragraph20 grey">
+							Elegant end balanced
+						</div>
+					</div>
+				</div>
+				{% set customCounter = customCounter + 1 %}
+				{% if customCounter is divisible by(n) %}
+					{% set customCounter = 0 %}
+					<div style="background-image:url(/assets/img/list-bg-{{counterBanner}}.jpg)" class="grid-2 item item-background item-{{ customCounter }} grid-md-4 px-40 pt-64 pb-80"></div>
+					{% set counterBanner = counterBanner + 1 %}
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+	</div>
+</section>
