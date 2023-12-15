@@ -30,7 +30,17 @@
 				{% set customCounter = customCounter + 1 %}
 				{% if customCounter is divisible by(n) %}
 					{% set customCounter = 0 %}
-					<div style="background-image:url(/assets/img/list-bg-{{counterBanner}}.jpg)" class="grid-2 item item-background item-{{ customCounter }} grid-md-4 px-40 pt-64 pb-80"></div>
+					<div class="grid-2 item item-background item-{{ customCounter }} grid-md-4 px-40 pt-64 pb-80">
+						<div class="item-background__bg" style="background-image:url(/assets/img/list-bg-{{counterBanner}}.jpg)"></div>
+						<div class="text center">
+							<div class="display60 white mb-20">
+								“Caiarossa has an omnipresent energy, the energy of land, wind, soils, which seek no more than to express themselves free”.
+							</div>
+							<div class="paragraph20 white">
+								Mario Rossi  •  Lorem ipsum
+							</div>
+						</div>
+					</div>
 					{% set counterBanner = counterBanner + 1 %}
 				{% endif %}
 			{% endfor %}
