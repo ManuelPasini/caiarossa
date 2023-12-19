@@ -1,16 +1,14 @@
 export default function mapWines() {
-    var container = document.getElementById('mapWines');
-    var wraptext = document.getElementById('wraptext');
-    var innerWraptext = document.getElementById('inner_wraptext');
-    var title, text, extratext;
-    var defaultData = {};
-    var offset = 64;
-    var pin, defaultElement;
+    const container = document.getElementById('mapWines');
+    const wraptext = document.getElementById('wraptext');
+    const innerWraptext = document.getElementById('inner_wraptext');
+    let title, text, extratext;
+    const defaultData = {};
+    const offset = 64;
+    let defaultElement, pin;
 
     async function getData() {
-        let request;
-
-        request = {
+        const request = {
             method: 'GET',
             cache: 'no-store',
             headers: {
@@ -19,13 +17,13 @@ export default function mapWines() {
         };
 
         try {
-            let response = await fetch('/assets/json/mapWines.json', request);
+            const response = await fetch('/assets/json/mapWines.json', request);
 
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
 
-            let responseData = await response.json();
+            const responseData = await response.json();
             createPins(responseData);
             return responseData;
         } catch (error) {
@@ -36,43 +34,11 @@ export default function mapWines() {
 
     function createPins(items) {
         items.forEach((item, i) => {
-            pin = document.createElement('div');
-            pin.className = 'label40 mapWines__pin';
-            pin.textContent = item.title;
-            pin.style.left = item.position.left + '%';
-            pin.style.top = item.position.top + '%';
-
+            pin = createPin(item);
             container.appendChild(pin);
 
-            if (i == 0) {
-                pin.classList.add('default', 'active');
-                wraptext.classList.add('wraptext--bg' + item.color);
-                title = document.createElement('div');
-                title.className = 'label30 wraptext__title';
-                title.textContent = item.title;
-
-                text = document.createElement('div');
-                text.className = 'paragraph30 wraptext__text';
-                text.textContent = item.text;
-
-                extratext = document.createElement('div');
-                extratext.className = 'paragraph30 wraptext__extratext';
-                extratext.innerHTML = item.extratext;
-
-                if (extratext.textContent == "") {
-                    extratext.classList.add("hide");
-                }
-
-                innerWraptext.appendChild(title);
-                innerWraptext.appendChild(text);
-                innerWraptext.appendChild(extratext);
-
-                wraptext.style.height = innerWraptext.clientHeight + 64 + 'px';
-
-                defaultData.title = item.title;
-                defaultData.text = item.text;
-                defaultData.extratext = item.extratext;
-                defaultElement = pin;
+            if (i === 0) {
+                setDefaultStyles(pin, item);
             }
 
             if (pin !== defaultElement) {
@@ -80,6 +46,46 @@ export default function mapWines() {
                 pin.addEventListener('mouseleave', () => handleMouseLeave(item));
             }
         });
+    }
+
+    function createPin(item) {
+        const newPin = document.createElement('div');
+        newPin.className = 'label40 mapWines__pin';
+        newPin.textContent = item.title;
+        newPin.style.left = item.position.left + '%';
+        newPin.style.top = item.position.top + '%';
+        return newPin;
+    }
+
+    function setDefaultStyles(pin, item) {
+        pin.classList.add('default', 'active');
+        wraptext.classList.add('wraptext--bg' + item.color);
+        title = document.createElement('div');
+        title.className = 'label30 wraptext__title';
+        title.textContent = item.title;
+
+        text = document.createElement('div');
+        text.className = 'paragraph30 wraptext__text';
+        text.textContent = item.text;
+
+        extratext = document.createElement('div');
+        extratext.className = 'paragraph30 wraptext__extratext';
+        extratext.innerHTML = item.extratext;
+
+        if (extratext.textContent === "") {
+            extratext.classList.add("hide");
+        }
+
+        innerWraptext.appendChild(title);
+        innerWraptext.appendChild(text);
+        innerWraptext.appendChild(extratext);
+
+        wraptext.style.height = `${innerWraptext.clientHeight + offset}px`;
+
+        defaultData.title = item.title;
+        defaultData.text = item.text;
+        defaultData.extratext = item.extratext;
+        defaultElement = pin;
     }
 
     function handleMouseEnter(item) {
