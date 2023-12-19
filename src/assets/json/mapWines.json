@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Caiairossa",
+    "text": "Riparbella is the cradle of Caiarossa; a small medieval village that stands on a hill on the Tuscan coast.",
+    "extratext": "",
+    "color": "red",
+    "position": {
+      "left": "69",
+      "top": "22"
+    }
+
+  },
+  {
+    "title": "PISA",
+    "text": "Between one wine tasting and another, don't miss the chance to take a picture holding up the famous leaning tower of Pisa.",
+    "extratext": "<strong>Distance from Caiarossa:</strong> 40 km",
+    "color": "white",
+    "position": {
+      "left": "5",
+      "top": "11"
+    }
+
+  },
+  {
+    "title": "Riparbella",
+    "text": "Lorem ipsum lorem",
+    "extratext": "",
+    "color": "red",
+    "position": {
+      "left": "44",
+      "top": "26"
+    }
+
+  },
+  {
+    "title": "FLORENCE",
+    "text": "Not far from Florence, Caiarossa embraces all the influence of the cradle of the Renaissance.",
+    "extratext": "<strong>Distance from Caiarossa:</strong> 70 km",
+    "color": "white",
+    "position": {
+      "left": "12",
+      "top": "8"
+    }
+
+  }
+]

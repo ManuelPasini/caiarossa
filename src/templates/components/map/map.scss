@@ -1,0 +1,82 @@
+.mapWines {
+    position: relative;
+
+    &__pin {
+        position: absolute;
+        padding: 10px;
+        background-color: var(--color-brand-white);
+        left: 0;
+        top: 0;
+        z-index: 2;
+        opacity: .4;
+        border-radius: 4px;
+        cursor: default;
+        transition: all 1.2s $smooth;
+
+        &:hover,
+        &.active {
+            opacity: 1;
+        }
+
+        &.default {
+            background: var(--color-brand-red);
+            color: var(--color-brand-white);
+        }
+    }
+
+    .wraptext {
+        background-color: var(--color-brand-white);
+        width: 445px;
+        padding: 32px;
+        position: absolute;
+        bottom: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        border-radius: 16px;
+        transition: all .8s $smooth;
+        overflow: hidden;
+
+        .inner_wraptext {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            gap: 24px;
+            transition: all .8s $smooth;
+            opacity: 1;
+
+            &.transation {
+                opacity: 0;
+            }
+        }
+
+        &--bgred {
+            background-color: var(--color-brand-red);
+            color: var(--color-brand-white);
+        }
+
+        &.white {
+            background-color: var(--color-brand-white);
+            color: var(--color-brand-black);
+        }
+
+        &__title {
+            text-transform: uppercase;
+        }
+
+        .hide {
+            display: none;
+        }
+    }
+
+    picture {
+        img {
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}

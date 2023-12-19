@@ -196,6 +196,11 @@
       "fontFamily": "semplicitaprosemibold, Arial, sans-serif",
       "fontSize": "14px",
       "lineHeight": "120%"
+    },
+    "label40": {
+      "fontFamily": "semplicitaprosemibold, Arial, sans-serif",
+      "fontSize": "12px",
+      "lineHeight": "150%"
     }
   },
   "grid": {

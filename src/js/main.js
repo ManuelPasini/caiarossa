@@ -5,6 +5,7 @@ import '../css/main.scss';
 //
 import { lazyLoad } from './common/lazyLoad';
 import { lenis } from './common/lenis';
+import mapWines from './common/mapWines';
 import { navigation } from './common/navigation';
 import scrollDiscover from './common/scrollDiscover';
 import swiper from './common/swiper';
@@ -15,6 +16,7 @@ addEventListener('DOMContentLoaded', () => {
   lenis();
   navigation();
   scrollDiscover()
+  mapWines();
 });
 
 import icons from 'virtual:icons';

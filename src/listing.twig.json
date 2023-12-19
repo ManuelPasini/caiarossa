@@ -17,6 +17,12 @@
       }
     ],
     "components": [
+      { "schema": "map",
+        "media": {
+          "type": "image",
+          "src": "/assets/img/hero.jpg"
+        }
+      },
       { "schema": "media",
         "media": {
           "type": "image",
